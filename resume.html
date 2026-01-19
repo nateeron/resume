@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAYOSHI - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 1.3em;
+            color: #34495e;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        
+        .contact-info span {
+            margin: 0 10px;
+        }
+        
+        section {
+            margin-bottom: 35px;
+        }
+        
+        section h3 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .summary {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        
+        .summary p {
+            margin-bottom: 12px;
+        }
+        
+        .competencies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        
+        .competencies li {
+            list-style: none;
+            padding: 8px 0;
+            border-left: 3px solid #3498db;
+            padding-left: 15px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .skill-category h4 {
+            color: #34495e;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .skill-category li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .company {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .position {
+            font-size: 1em;
+            color: #34495e;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        
+        .period {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+        
+        .experience-item ul {
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        
+        .experience-item li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .education-item:before {
+            content: "🎓";
+            position: absolute;
+            left: 0;
+        }
+        
+        .education-degree {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .education-year {
+            color: #7f8c8d;
+            margin-left: 10px;
+        }
+        
+        .project-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        
+        .project-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .project-description {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .leadership-list {
+            list-style: none;
+        }
+        
+        .leadership-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .leadership-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .languages-list {
+            list-style: none;
+        }
+        
+        .languages-list li {
+            padding: 5px 0;
+            padding-left: 20px;
+        }
+        
+        .additional-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .additional-info ul {
+            list-style: none;
+        }
+        
+        .additional-info li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .additional-info li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-size: 1.5em;
+            line-height: 0.8;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CAYOSHI</h1>
+            <h2>Software & Hardware Development Director (Director-track)</h2>
+            <div class="contact-info">
+                <span>📍 Bangkok, Thailand</span>
+                <span>✉️ Email: ____________________</span>
+                <span>📞 Phone: ____________________</span>
+                <div style="margin-top: 10px;">
+                    <span>LinkedIn / Portfolio / GitHub: ____________________</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h3>Professional Summary</h3>
+            <p>Software and System Engineering leader with a strong foundation in software development, system architecture, and hardware integration.</p>
+            <p>Over 10+ years of hands-on technical experience, spanning full-stack software development, automation systems, electrical systems, and hybrid energy solutions.</p>
+            <p>Proven ability to design, build, deploy, and operate end-to-end systems, bridging business requirements with technical execution. Experienced in technical leadership, system ownership, and cross-domain problem solving, covering both software and hardware environments.</p>
+        </section>
+
+        <section>
+            <h3>Core Competencies</h3>
+            <ul class="competencies">
+                <li>Software Architecture & System Design</li>
+                <li>Technical Leadership & Decision Making</li>
+                <li>Full-Stack Development (Backend / Frontend)</li>
+                <li>Hardware & Electrical System Integration</li>
+                <li>Automation & Embedded Systems</li>
+                <li>Production Deployment & Operations</li>
+                <li>Risk Management & System Reliability</li>
+                <li>Cross-functional Collaboration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Software & Backend</h4>
+                    <ul>
+                        <li>C#, .NET / ASP.NET Core</li>
+                        <li>REST API Design</li>
+                        <li>Authentication & Authorization (JWT, Role-based)</li>
+                        <li>Python (FastAPI, Flask)</li>
+                        <li>Real-time systems (WebSocket / Socket.IO)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>React.js (Vite)</li>
+                        <li>JavaScript, HTML, CSS</li>
+                        <li>Material UI</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Database</h4>
+                    <ul>
+                        <li>SQL Server (Stored Procedures, Dynamic SQL)</li>
+                        <li>SQLite</li>
+                        <li>Data Modeling & Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Infrastructure & DevOps</h4>
+                    <ul>
+                        <li>Linux (Ubuntu)</li>
+                        <li>Nginx</li>
+                        <li>Systemd Services</li>
+                        <li>Docker</li>
+                        <li>Cloudflare / SSL / Certbot</li>
+                        <li>VPS Deployment & Operations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Hardware & Automation</h4>
+                    <ul>
+                        <li>Arduino / Embedded Systems</li>
+                        <li>Electrical Systems (High Voltage / Low Voltage)</li>
+                        <li>CCTV & Security Systems</li>
+                        <li>Hybrid Energy Systems (Solar + Grid)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Professional Experience</h3>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company">ADI Fullstack Co., Ltd.</div>
+                        <div class="position">Founder / Technical Director</div>
+                    </div>
+                    <div class="period">2023 – Present</div>
+                </div>
+                <ul>
+                    <li>Founded and led a full-stack development company delivering end-to-end software solutions</li>
+                    <li>Defined technical architecture and development standards across projects</li>
+                    <li>Oversaw system design, implementation, deployment, and production operations</li>
+                    <li>Acted as primary technical decision-maker, ensuring system scalability, stability, and maintainability</li>
+                    <li>Collaborated with stakeholders to translate business requirements into technical solutions</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company">Independent Full-Stack & System Engineer (Freelance)</div>
+                        <div class="position">Freelance</div>
+                    </div>
+                    <div class="period">2018 – 2022</div>
+                </div>
+                <ul>
+                    <li>Designed and developed automated trading systems for clients</li>
+                    <li>Built and deployed backend services, APIs, and data processing systems</li>
+                    <li>Delivered end-to-end system ownership, from requirement analysis to production deployment</li>
+                    <li>Installed and configured residential electrical systems, including full-house wiring and CCTV systems</li>
+                    <li>Designed and implemented a fully automated hydroponic farm system (200 planting points) using Arduino</li>
+                    <li>Integrated hybrid energy systems, utilizing solar power during daytime and grid electricity at night</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company">Full-Stack Developer</div>
+                        <div class="position">Full-Stack Developer</div>
+                    </div>
+                    <div class="period">2017 – 2018</div>
+                </div>
+                <ul>
+                    <li>Worked as a full-stack developer after graduating in Computer Engineering</li>
+                    <li>Developed web-based systems using backend APIs and frontend frameworks</li>
+                    <li>Participated in system design, development, testing, and deployment</li>
+                    <li>Gained foundational experience in production-grade software development</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Education</h3>
+            <div class="education-item">
+                <span class="education-degree">Bachelor of Engineering (Computer Engineering)</span>
+                <span class="education-year">2017</span>
+            </div>
+            <div class="education-item">
+                <span class="education-degree">Diploma (High Vocational Certificate) – Electrical Power</span>
+                <span class="education-year">2014</span>
+            </div>
+            <div class="education-item">
+                <span class="education-degree">Certificate (Vocational Certificate) – Electrical Power</span>
+                <span class="education-year">2012</span>
+            </div>
+        </section>
+
+        <section>
+            <h3>Key Project Highlights</h3>
+            <div class="project-item">
+                <div class="project-title">Automated Trading Systems</div>
+                <div class="project-description">Designed and implemented algorithmic trading platforms with real-time data processing, order management, and risk control mechanisms.</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">Hybrid Energy Automation System</div>
+                <div class="project-description">Built an Arduino-based automation system controlling a 200-point hydroponic farm powered by a hybrid solar and grid energy model.</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">End-to-End Software Platforms</div>
+                <div class="project-description">Delivered production-ready systems covering API, database, frontend UI, authentication, and infrastructure deployment.</div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Leadership & Management Approach</h3>
+            <ul class="leadership-list">
+                <li>Leads through technical clarity and accountability</li>
+                <li>Balances business objectives with engineering feasibility</li>
+                <li>Focuses on long-term system reliability, not just short-term delivery</li>
+                <li>Encourages continuous improvement and innovation</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Languages</h3>
+            <ul class="languages-list">
+                <li><strong>Thai</strong> – Native</li>
+                <li><strong>English</strong> – Technical Communication</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Additional Information</h3>
+            <div class="additional-info">
+                <ul>
+                    <li>Strong background combining software engineering and electrical systems</li>
+                    <li>Comfortable operating at the intersection of software, hardware, and infrastructure</li>
+                    <li>Entrepreneurial mindset with ownership-driven leadership</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

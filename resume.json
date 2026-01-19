@@ -1,0 +1,147 @@
+{
+  "personalInfo": {
+    "name": "CAYOSHI",
+    "title": "Software & Hardware Development Director (Director-track)",
+    "location": "Bangkok, Thailand",
+    "email": "____________________",
+    "phone": "____________________",
+    "linkedin": "____________________",
+    "portfolio": "____________________",
+    "github": "____________________"
+  },
+  "professionalSummary": [
+    "Software and System Engineering leader with a strong foundation in software development, system architecture, and hardware integration.",
+    "Over 10+ years of hands-on technical experience, spanning full-stack software development, automation systems, electrical systems, and hybrid energy solutions.",
+    "Proven ability to design, build, deploy, and operate end-to-end systems, bridging business requirements with technical execution. Experienced in technical leadership, system ownership, and cross-domain problem solving, covering both software and hardware environments."
+  ],
+  "coreCompetencies": [
+    "Software Architecture & System Design",
+    "Technical Leadership & Decision Making",
+    "Full-Stack Development (Backend / Frontend)",
+    "Hardware & Electrical System Integration",
+    "Automation & Embedded Systems",
+    "Production Deployment & Operations",
+    "Risk Management & System Reliability",
+    "Cross-functional Collaboration"
+  ],
+  "technicalSkills": {
+    "softwareBackend": [
+      "C#, .NET / ASP.NET Core",
+      "REST API Design",
+      "Authentication & Authorization (JWT, Role-based)",
+      "Python (FastAPI, Flask)",
+      "Real-time systems (WebSocket / Socket.IO)"
+    ],
+    "frontend": [
+      "React.js (Vite)",
+      "JavaScript, HTML, CSS",
+      "Material UI"
+    ],
+    "database": [
+      "SQL Server (Stored Procedures, Dynamic SQL)",
+      "SQLite",
+      "Data Modeling & Optimization"
+    ],
+    "infrastructureDevOps": [
+      "Linux (Ubuntu)",
+      "Nginx",
+      "Systemd Services",
+      "Docker",
+      "Cloudflare / SSL / Certbot",
+      "VPS Deployment & Operations"
+    ],
+    "hardwareAutomation": [
+      "Arduino / Embedded Systems",
+      "Electrical Systems (High Voltage / Low Voltage)",
+      "CCTV & Security Systems",
+      "Hybrid Energy Systems (Solar + Grid)"
+    ]
+  },
+  "professionalExperience": [
+    {
+      "company": "ADI Fullstack Co., Ltd.",
+      "position": "Founder / Technical Director",
+      "period": "2023 – Present",
+      "responsibilities": [
+        "Founded and led a full-stack development company delivering end-to-end software solutions",
+        "Defined technical architecture and development standards across projects",
+        "Oversaw system design, implementation, deployment, and production operations",
+        "Acted as primary technical decision-maker, ensuring system scalability, stability, and maintainability",
+        "Collaborated with stakeholders to translate business requirements into technical solutions"
+      ]
+    },
+    {
+      "company": "Independent Full-Stack & System Engineer (Freelance)",
+      "position": "Freelance",
+      "period": "2018 – 2022",
+      "responsibilities": [
+        "Designed and developed automated trading systems for clients",
+        "Built and deployed backend services, APIs, and data processing systems",
+        "Delivered end-to-end system ownership, from requirement analysis to production deployment",
+        "Installed and configured residential electrical systems, including full-house wiring and CCTV systems",
+        "Designed and implemented a fully automated hydroponic farm system (200 planting points) using Arduino",
+        "Integrated hybrid energy systems, utilizing solar power during daytime and grid electricity at night"
+      ]
+    },
+    {
+      "company": "Full-Stack Developer",
+      "position": "Full-Stack Developer",
+      "period": "2017 – 2018",
+      "responsibilities": [
+        "Worked as a full-stack developer after graduating in Computer Engineering",
+        "Developed web-based systems using backend APIs and frontend frameworks",
+        "Participated in system design, development, testing, and deployment",
+        "Gained foundational experience in production-grade software development"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering (Computer Engineering)",
+      "year": "2017"
+    },
+    {
+      "degree": "Diploma (High Vocational Certificate) – Electrical Power",
+      "year": "2014"
+    },
+    {
+      "degree": "Certificate (Vocational Certificate) – Electrical Power",
+      "year": "2012"
+    }
+  ],
+  "keyProjectHighlights": [
+    {
+      "title": "Automated Trading Systems",
+      "description": "Designed and implemented algorithmic trading platforms with real-time data processing, order management, and risk control mechanisms."
+    },
+    {
+      "title": "Hybrid Energy Automation System",
+      "description": "Built an Arduino-based automation system controlling a 200-point hydroponic farm powered by a hybrid solar and grid energy model."
+    },
+    {
+      "title": "End-to-End Software Platforms",
+      "description": "Delivered production-ready systems covering API, database, frontend UI, authentication, and infrastructure deployment."
+    }
+  ],
+  "leadershipManagementApproach": [
+    "Leads through technical clarity and accountability",
+    "Balances business objectives with engineering feasibility",
+    "Focuses on long-term system reliability, not just short-term delivery",
+    "Encourages continuous improvement and innovation"
+  ],
+  "languages": [
+    {
+      "language": "Thai",
+      "proficiency": "Native"
+    },
+    {
+      "language": "English",
+      "proficiency": "Technical Communication"
+    }
+  ],
+  "additionalInformation": [
+    "Strong background combining software engineering and electrical systems",
+    "Comfortable operating at the intersection of software, hardware, and infrastructure",
+    "Entrepreneurial mindset with ownership-driven leadership"
+  ]
+}
